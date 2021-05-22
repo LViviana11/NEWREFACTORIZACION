@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind Tutorial</title>
+    <link rel="stylesheet" href="./resources/css/tailwind.css">
+
+    <script src="./node_modules/dayjs/dayjs.min.js"></script> <!-- horas -->
+    <script src="./node_modules/dayjs/locale/es.js"></script> <!-- la importamos en español -->
+
+
+
+    <script type="module" src="./resources/js/index.js"></script>
+</head>
+
+<body>
+
+    <header class="mb-2 py-4 px-2 bg-primary">
+        <h1 class="text-yellow-50 text-center ">Lo último en noticias</h1>
+    </header>
+
+    <main>
+
+        <nav class="mx-4">
+            <label class="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2" for="grid-state">
+                Seleccione la categoría de noticias
+            </label>
+            <div class="grid sm:grid-cols-2">
+                <div class="relative m-4">
+                    <select id="categories"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                        <!-- Se llena desde el JS -->
+                        <!-- <option>Generales</option>
+                    <option>Tecnología</option> -->
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="relative m-4">
+                    <select id="countries"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                        <!-- Se llena desde el JS -->
+                        <!-- <option>Generales</option>
+                    <option>Tecnología</option> -->
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="max-w-screen-xl mx-auto p-0 sm:p-10 md:p-4">
+
+            <div id="news" class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-5">
+
+                <!---- aquí van las noticias ---->
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+
+</html>
