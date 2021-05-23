@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded',async event => {
     const countriesList = populateSelectList('#countries', countries, 'code', 'name') //recibe como 1er argumento el selector que me determina cual seleccionable voy a utilizar, el 2do corresponde a un array de elementos que pueden ser mostrados en el html, 3er damos el atributo el que va a servir de indice de lista
     categoryList.selectedIndex = initialIndex //hace que aparezca generales de primero
     countriesList.selectedIndex = initialIndexCountri //hace que aparezca colombia de primero
-    filterNews(categories[initialIndex].value, countries[initialIndexCountri].value)
+    filterNews(categoryList.value, countriesList.value)
     
 
     categoryList.addEventListener('change', e => { //me permite ver cuando estoy cambiando de opcion
